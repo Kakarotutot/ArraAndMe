@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Website</title>
+<style>
+/* Body styling for the background color and texture */
+body {
+  background-color: #f2e8d8;
+  background-image: linear-gradient(135deg, #f5e9dc 25%, #f2e8d8 25%, #f2e8d8 50%, #f5e9dc 50%, #f5e9dc 75%, #f2e8d8 75%);
+  background-size: 20px 20px;
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered container to act as a "page" */
+.container {
+  background-color: #fff;
+  width: 70%;
+  max-width: 800px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid #d8c4a0;
+  text-align: center;
+}
+
+/* Styling for the headers */
+h1, h2 {
+  color: #663300;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Subtle decorative styling for emphasized text blocks */
+.text {
+  margin-top: 30px;
+  color: #663300;
+}
+
+.text-inner {
+  padding: 20px;
+  background-color: #fdfaf2;
+  border: 1px solid #e2d3b5;
+  border-radius: 8px;
+  font-size: 1.2em;
+}
+
+.text-inner span {
+  display: block;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.text-inner span:first-of-type {
+  margin-top: 15px;
+}
+
+.text-inner span:last-of-type {
+  font-style: italic;
+}
+
+/* Navigation bar styling */
+.navbar {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  width: 300px;
+  border: 2px solid #d8c4a0;
+}
+
+.navbar a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #663300;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Close button for the navbar */
+.navbar .close-btn {
+  background-color: #663300;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.navbar .close-btn:hover {
+  background-color: #805C3C;
+}
+
+/* Open button */
+.open-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #663300;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.open-btn:hover {
+  background-color: #805C3C;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Love Letter</h1>
+  <h2>To My Dearest</h2>
+  <p>
+    Hello Langga, first of all Happy New Year. Nakakaramdam ako ng lungkot ngayon kase sa totoo lang gusto kitang kasama ngayong bagong taon, sa totoo lang naiiyak nako kase di kita kausap buong araw😭😭. Langga i know andami nating away and hindi pagkakaintindihan, pero I promise na aalagaan at papakasalan po kita, hindi po iyan biro. I want to make you happy talaga yun ang goal ko sa buhay. Pasensiya kana kung ganto wala pang pera boyfriend mo, pero babawi naman po ako promise, di man perfect relasyon natin pero I make sure na hindi kita pababayaan and hindi kita bibitawan. Sana po dumating yung time na malapit na tayo o magkasama na tayo, para masulit natin yung pagsasama natin. btw itong website plano ko siyang gawan ng iba't ibang uodate para maging consistent, click moopo yung menu may makikita ka, sorry kung ka onti palang yung laman kase ngayon ko lang talaga siya na isipan. 
+
+    I love you so much mahal ko, Hopefuly this year 2025 maging masaya and maging okay ang takbo ng buhay natin. I love you so much Arravilla❤️.
+  </p>
+  <p>
+    Forever yours,  
+    <br>With endless affection.
+  </p>
+
+  <div class="text">
+    <div class="text-inner">
+      <p>Your presence turns my world into poetry.</p>
+      <span>- A heartfelt whisper</span>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation bar -->
+<div class="navbar" id="navbar">
+  <a href="ForYou.html">Home</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="#goals">Goals</a>
+  <button class="close-btn" onclick="closeNav()">Close</button>
+</div>
+
+<!-- Open button -->
+<button class="open-btn" onclick="openNav()">Menu</button>
+
+<script>
+function openNav() {
+  document.getElementById('navbar').style.display = 'block';
+}
+
+function closeNav() {
+  document.getElementById('navbar').style.display = 'none';
+}
+</script>
+</body>
+</html>
